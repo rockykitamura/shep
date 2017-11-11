@@ -18,5 +18,5 @@ export default async function (pattern, bucket) {
     }
 
     return { name: func, key, bucket }
-  })
+  }, {concurrency: 2})
 }
